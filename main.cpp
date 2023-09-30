@@ -11,8 +11,50 @@ exactamente lo mismo
 La funcion de ambas es traer las librerias necesarias para poder programar
 
  */
-int main()
-{
+
+ /* Primero una explicacion de que es cada cosa:
+ 
+ Objeto: Un objeto es una instancia de una clase. Representa una entidad que tiene propiedades y puede 
+ realizar acciones. En C++, los objetos se crean a partir de clases y se utilizan para acceder a los 
+ miembros de la clase.
+ 
+ Mensaje: En C++, el término "mensaje" no se utiliza de la misma manera que en algunos otros lenguajes de 
+ programación. En C++, se utiliza el concepto de "llamada a función" o "invocación de método" para 
+ comunicarse con objetos y llamar a funciones miembro.
+
+ Método: Un método es una función miembro de una clase que puede ser llamada en un objeto de esa clase. 
+ Los métodos definen el comportamiento de un objeto y pueden acceder a sus datos internos.
+ 
+ Clase: Una clase es una plantilla que define la estructura y el comportamiento de los objetos. Los objetos 
+ se crean a partir de una clase, y la clase define sus atributos y métodos.
+
+ Herencia: La herencia es un concepto de programación orientada a objetos que permite crear una nueva clase 
+ basada en una clase existente. La nueva clase hereda los atributos y métodos de la clase base y puede agregar 
+ o modificar su comportamiento.
+
+ Polimorfismo: simplifica la programación al permitir que objetos de diferentes clases respondan de manera 
+ específica a una llamada de función común, lo que facilita la escritura de código más genérico y reutilizable.
+
+ Interfaz: En C++, una interfaz es una clase abstracta que define un conjunto de métodos virtuales que deben 
+ ser implementados por cualquier clase derivada. Las interfaces se utilizan para lograr la abstracción y el 
+ polimorfismo.
+
+ Constructor: Un constructor es un método especial en una clase que se llama automáticamente cuando se crea un 
+ objeto de esa clase. Se utiliza para inicializar los datos miembros del objeto.
+
+ Sobrecarga: La sobrecarga se refiere a la capacidad de definir múltiples funciones con el mismo nombre pero con 
+ diferentes parámetros. Esto permite que una función realice diferentes acciones según los argumentos que recibe.
+  */
+int main(){
+    /* 
+    Se crean objetos de la clase DigitalIn y DigitalOut llamados gasDetector, 
+    overTempDetector, y alarmLed.
+
+    Los objetos gasDetector y overTempDetector llaman al método mode() para configurar 
+    su modo de funcionamiento como PullDown, se conectan a 5v.
+
+    Los constructores estan dentro de las clases DigitalIn y DigitalOut
+     */
    DigitalIn gasDetector(D2);
 
     /*
